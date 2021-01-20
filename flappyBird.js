@@ -30,10 +30,10 @@ Audio.prototype.play = (function (play) {
 var cvs = document.getElementById("canvas");
 var ctx = cvs.getContext("2d");
 
-const ANIMA_TUBI = 0;
-const ANIMA_SPRITE = 0;
-const SUONA_SOUNDTRACK = 0;
-const CAMBIA_SPRITE_E_SCENARIO_A_CASO = 0;
+const ANIMA_TUBI = 1;
+const ANIMA_SPRITE = 1;
+const SUONA_SOUNDTRACK = 1;
+const CAMBIA_SPRITE_E_SCENARIO_A_CASO = 1;
 
 // SCENARI
 const SCENARI = [
@@ -111,7 +111,7 @@ scor.src = "sounds/score.mp3";
 boom.src = "sounds/win.mp3";
 soundtrack.src = "sounds/Eternity.mp3";
 
-// QUANDO SI PRESE FRECCIA GIU'
+// QUANDO SI PREME FRECCIA GIU'
 document.addEventListener("keydown", SPOSTATI_IN_ALTO);
 
 function SPOSTATI_IN_ALTO() {
